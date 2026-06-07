@@ -1,4 +1,4 @@
-# LoRP — Locality-Aware Redundancy Pruning for LLM Depth Compression
+# LoRP: Locality-Aware Redundancy Pruning for LLM Depth Compression
 
 Training-free, **one-shot, no-recovery** depth pruning for large language models.
 LoRP adapts its pruning pattern to each architecture by measuring how
