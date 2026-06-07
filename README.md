@@ -6,6 +6,8 @@ inter-layer redundancy is distributed across depth — *localized* in some
 families (Llama, OLMo, Mistral) and more *globally distributed* in others
 (Qwen) — and allocating the prune budget accordingly.
 
+<img width="100%" height="246" alt="Image" src="https://github.com/user-attachments/assets/866dfc9a-d87d-42ee-9f26-24d12f14b6f0" />
+
 The key quantity is the **Representation Locality Score (RLS)**, a closed-form,
 hyperparameter-free property of the inter-layer cosine geometry:
 
@@ -153,6 +155,9 @@ downstream accuracy across architectures, with the largest gains on Qwen
 models whose redundancy is most globally distributed. Depth pruning also
 translates into near-linear inference speedups (Qwen3-14B: 1.36×–1.56× at
 Lp=11–15, −24%…−33% peak memory; paper Appendix A).
+
+
+<img width="100%" height="438" alt="Image" src="https://github.com/user-attachments/assets/8999c747-edab-46e3-9484-7dab6426226c" />
 
 ---
 
